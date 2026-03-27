@@ -1,32 +1,32 @@
-# 💳 AI-Based Fraud Detection System
+# AI-Based Fraud Detection System
 
-## 🚀 Project Overview
+## Overview
 
-This project focuses on detecting fraudulent financial transactions using Machine Learning and Deep Learning techniques. It analyzes transaction patterns and identifies anomalies to prevent fraud in real-time.
-
----
-
-## 🎯 Objectives
-
-* Detect fraudulent transactions with high accuracy
-* Handle imbalanced datasets effectively
-* Compare Machine Learning vs Deep Learning models
-* Build a scalable fraud detection pipeline
+This project presents a comprehensive approach to detecting fraudulent financial transactions using machine learning and deep learning techniques. The system analyzes transaction patterns to identify anomalies and classify transactions as legitimate or fraudulent. It is designed to handle highly imbalanced datasets and simulate real-world fraud detection scenarios.
 
 ---
 
-## 🧠 Technologies Used
+## Objectives
 
-* **Programming Language:** Python
-* **Libraries:** Pandas, NumPy, Scikit-learn, TensorFlow/Keras
-* **Visualization:** Matplotlib, Seaborn
-* **Environment:** Jupyter Notebook / VS Code
+* Develop an accurate and reliable fraud detection model
+* Address class imbalance in financial datasets
+* Compare the performance of traditional machine learning and deep learning models
+* Build a modular and extensible pipeline for experimentation and analysis
 
 ---
 
-## 📂 Project Structure
+## Technologies Used
 
-```
+* Programming Language: Python
+* Libraries: Pandas, NumPy, Scikit-learn, TensorFlow/Keras
+* Visualization: Matplotlib, Seaborn
+* Development Environment: Jupyter Notebook, Visual Studio Code
+
+---
+
+## Project Structure
+
+```bash
 AI-Based-Fraud-Detection/
 │
 ├── BalanceDataset.py
@@ -36,7 +36,7 @@ AI-Based-Fraud-Detection/
 │
 ├── creditcard/
 │   ├── creditcard.ipynb
-│   ├── feature selection notebooks
+│   ├── feature engineering and selection notebooks
 │
 ├── ieee-fraud-detection/
 │   ├── ieee-fraud-detection.ipynb
@@ -45,137 +45,128 @@ AI-Based-Fraud-Detection/
 │   ├── dataset notebook
 │
 └── Project Reports/
-    ├── Final Report (PDF)
+    ├── Final report (PDF)
 ```
 
 ---
 
-## 📊 Dataset
+## Dataset Description
 
-* Credit Card Fraud Dataset
+The project utilizes multiple datasets to ensure robustness and generalization:
+
+* Credit Card Fraud Detection Dataset
 * IEEE Fraud Detection Dataset
 * Synthetic Financial Dataset
 
-👉 These datasets contain transaction details such as:
+These datasets include transaction-level features such as:
 
-* Amount
-* Time
-* Features extracted using PCA
-* Fraud labels (0 = Normal, 1 = Fraud)
-
----
-
-## ⚙️ Features
-
-* Data preprocessing & cleaning
-* Feature selection & engineering
-* Handling imbalanced data
-* Multiple model implementations:
-
-  * Logistic Regression
-  * Random Forest
-  * XGBoost
-  * Neural Networks
-* Performance evaluation using:
-
-  * Accuracy
-  * Precision
-  * Recall
-  * F1 Score
-  * ROC-AUC
+* Transaction amount and timestamp
+* Engineered numerical features (e.g., PCA components)
+* Binary classification label (fraud or non-fraud)
 
 ---
 
-## 🧪 Models Used
+## Methodology
 
-### 🔹 Machine Learning Models
+### Data Preprocessing
+
+* Handling missing values and noise
+* Feature scaling and normalization
+* Addressing class imbalance using appropriate techniques
+
+### Feature Engineering
+
+* Correlation-based feature selection
+* Outlier detection and suppression
+* Dimensionality reduction techniques
+
+### Model Development
+
+#### Machine Learning Models
 
 * Logistic Regression
 * Decision Tree
 * Random Forest
-* XGBoost
+* Gradient Boosting (XGBoost)
 
-### 🔹 Deep Learning Models
+#### Deep Learning Models
 
-* Artificial Neural Networks (ANN)
-* Fully Connected Networks
+* Artificial Neural Networks
+* Fully Connected Dense Architectures
+
+### Evaluation Metrics
+
+* Accuracy
+* Precision
+* Recall
+* F1 Score
+* ROC-AUC
 
 ---
 
-## 📈 Results
+## Results
 
-* Achieved high fraud detection accuracy
-* Improved recall for minority (fraud) class
-* Demonstrated effectiveness of ensemble & deep learning models
+The implemented models demonstrate strong performance in detecting fraudulent transactions, particularly in improving recall for the minority class. Comparative analysis highlights the effectiveness of ensemble and deep learning approaches in handling complex patterns within financial data.
 
 ---
 
-## ▶️ How to Run the Project
+## Installation and Usage
 
-### 1️⃣ Clone the Repository
+### Clone the Repository
 
-```
+```bash
 git clone https://github.com/amitgupta226571/Fraud-Detection.git
 cd Fraud-Detection
 ```
 
-### 2️⃣ Install Dependencies
+### Install Dependencies
 
-```
+```bash
 pip install -r requirements.txt
 ```
 
-*(Create requirements.txt if not available)*
+### Run the Project
 
-### 3️⃣ Run Notebooks
+To execute machine learning models:
 
-```
-jupyter notebook
-```
-
-OR run Python scripts:
-
-```
+```bash
 python MachineLearningModels.py
 ```
 
----
+To explore experiments and analysis:
 
-## 📌 Future Improvements
-
-* Real-time fraud detection system
-* Deployment using Streamlit / Flask
-* Integration with live financial APIs
-* Explainable AI (SHAP, LIME)
-* Model optimization & hyperparameter tuning
+```bash
+jupyter notebook
+```
 
 ---
 
-## 👨‍💻 Author
+## Future Work
 
-**Amit Gupta**
-
-* LinkedIn: https://www.linkedin.com/in/amit-gupta-559418315/
-* GitHub: https://github.com/amitgupta226571
-
----
-
-## ⭐ Contribute
-
-Contributions are welcome! Feel free to fork the repository and submit a pull request.
+* Deployment as a real-time fraud detection system
+* Integration with web frameworks such as Streamlit or Flask
+* Incorporation of Explainable AI techniques (e.g., SHAP, LIME)
+* Hyperparameter optimization and model tuning
+* Integration with streaming data pipelines
 
 ---
 
-## 📜 License
+## Author
 
-This project is open-source and available under the MIT License.
+Amit Gupta
+LinkedIn: https://www.linkedin.com/in/amit-gupta-559418315/
+GitHub: https://github.com/amitgupta226571
+
+---
+
+## License
+
+This project is distributed under the MIT License.
 
 ---
 
-## 🙌 Acknowledgements
+## Acknowledgements
 
-* Kaggle datasets
-* Open-source ML community
-* Research papers on fraud detection
-
----
+* Public datasets from Kaggle and IEEE
+* Open-source machine learning community
+* Research contributions in fraud detection and anomaly detection
